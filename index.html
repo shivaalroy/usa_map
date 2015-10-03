@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Map of USA</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/fastLiveSearch.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<form name="states_search" id="states_search" onsubmit="return false;">
+			<input type="text" id="states_query" maxlength="20" placeholder="Type to filter..." tabindex="1" autofocus>
+			<button id="search_btn" onclick="return false;" tabindex="-1"></button>
+			<div class="additional_info">Tab through the states and hit 'Enter' for more info</div>
+		</form>
+		<ul id="states_list">
+			<li>Alabama</li>
+			<li>Alaska</li>
+			<li>Arizona</li>
+			<li>Arkansas</li>
+			<li>California</li>
+			<li>Colorado</li>
+			<li>Connecticut</li>
+			<li>Delaware</li>
+			<li>Florida</li>
+			<li>Georgia</li>
+			<li>Hawaii</li>
+			<li>Idaho</li>
+			<li>Illinois</li>
+			<li>Indiana</li>
+			<li>Iowa</li>
+			<li>Kansas</li>
+			<li>Kentucky</li>
+			<li>Louisiana</li>
+			<li>Maine</li>
+			<li>Maryland</li>
+			<li>Massachusetts</li>
+			<li>Michigan</li>
+			<li>Minnesota</li>
+			<li>Mississippi</li>
+			<li>Missouri</li>
+			<li>Montana</li>
+			<li>Nebraska</li>
+			<li>Nevada</li>
+			<li>New Hampshire</li>
+			<li>New Jersey</li>
+			<li>New Mexico</li>
+			<li>New York</li>
+			<li>North Carolina</li>
+			<li>North Dakota</li>
+			<li>Ohio</li>
+			<li>Oklahoma</li>
+			<li>Oregon</li>
+			<li>Pennsylvania</li>
+			<li>Rhode Island</li>
+			<li>South Carolina</li>
+			<li>South Dakota</li>
+			<li>Tennessee</li>
+			<li>Texas</li>
+			<li>Utah</li>
+			<li>Vermont</li>
+			<li>Virginia</li>
+			<li>Washington</li>
+			<li>West Virginia</li>
+			<li>Wisconsin</li>
+			<li>Wyoming</li>
+		</ul>
+		<div id="webpages">
+			<a id="alabama_page" href="https://en.wikipedia.org/wiki/alabama" target="_blank">Alabama</a>
+			<a id="alaska_page" href="https://en.wikipedia.org/wiki/alaska" target="_blank">Alaska</a>
+			<a id="arizona_page" href="https://en.wikipedia.org/wiki/arizona" target="_blank">Arizona</a>
+			<a id="arkansas_page" href="https://en.wikipedia.org/wiki/arkansas" target="_blank">Arkansas</a>
+			<a id="california_page" href="https://en.wikipedia.org/wiki/california" target="_blank">California</a>
+			<a id="colorado_page" href="https://en.wikipedia.org/wiki/colorado" target="_blank">Colorado</a>
+			<a id="connecticut_page" href="https://en.wikipedia.org/wiki/connecticut" target="_blank">Connecticut</a>
+			<a id="delaware_page" href="https://en.wikipedia.org/wiki/delaware" target="_blank">Delaware</a>
+			<a id="florida_page" href="https://en.wikipedia.org/wiki/florida" target="_blank">Florida</a>
+			<a id="georgia_page" href="https://en.wikipedia.org/wiki/georgia" target="_blank">Georgia</a>
+			<a id="hawaii_page" href="https://en.wikipedia.org/wiki/hawaii" target="_blank">Hawaii</a>
+			<a id="idaho_page" href="https://en.wikipedia.org/wiki/idaho" target="_blank">Idaho</a>
+			<a id="illinois_page" href="https://en.wikipedia.org/wiki/illinois" target="_blank">Illinois</a>
+			<a id="indiana_page" href="https://en.wikipedia.org/wiki/indiana" target="_blank">Indiana</a>
+			<a id="iowa_page" href="https://en.wikipedia.org/wiki/iowa" target="_blank">Iowa</a>
+			<a id="kansas_page" href="https://en.wikipedia.org/wiki/kansas" target="_blank">Kansas</a>
+			<a id="kentucky_page" href="https://en.wikipedia.org/wiki/kentucky" target="_blank">Kentucky</a>
+			<a id="louisiana_page" href="https://en.wikipedia.org/wiki/louisiana" target="_blank">Louisiana</a>
+			<a id="maine_page" href="https://en.wikipedia.org/wiki/maine" target="_blank">Maine</a>
+			<a id="maryland_page" href="https://en.wikipedia.org/wiki/maryland" target="_blank">Maryland</a>
+			<a id="massachusetts_page" href="https://en.wikipedia.org/wiki/massachusetts" target="_blank">Massachusetts</a>
+			<a id="michigan_page" href="https://en.wikipedia.org/wiki/michigan" target="_blank">Michigan</a>
+			<a id="minnesota_page" href="https://en.wikipedia.org/wiki/minnesota" target="_blank">Minnesota</a>
+			<a id="mississippi_page" href="https://en.wikipedia.org/wiki/mississippi" target="_blank">Mississippi</a>
+			<a id="missouri_page" href="https://en.wikipedia.org/wiki/missouri" target="_blank">Missouri</a>
+			<a id="montana_page" href="https://en.wikipedia.org/wiki/montana" target="_blank">Montana</a>
+			<a id="nebraska_page" href="https://en.wikipedia.org/wiki/nebraska" target="_blank">Nebraska</a>
+			<a id="nevada_page" href="https://en.wikipedia.org/wiki/nevada" target="_blank">Nevada</a>
+			<a id="new_hampshire_page" href="https://en.wikipedia.org/wiki/new_hampshire" target="_blank">New Hampshire</a>
+			<a id="new_jersey_page" href="https://en.wikipedia.org/wiki/new_jersey" target="_blank">New Jersey</a>
+			<a id="new_mexico_page" href="https://en.wikipedia.org/wiki/new_mexico" target="_blank">New Mexico</a>
+			<a id="new_york_page" href="https://en.wikipedia.org/wiki/new_york" target="_blank">New York</a>
+			<a id="north_carolina_page" href="https://en.wikipedia.org/wiki/north_carolina" target="_blank">North Carolina</a>
+			<a id="north_dakota_page" href="https://en.wikipedia.org/wiki/north_dakota" target="_blank">North Dakota</a>
+			<a id="ohio_page" href="https://en.wikipedia.org/wiki/ohio" target="_blank">Ohio</a>
+			<a id="oklahoma_page" href="https://en.wikipedia.org/wiki/oklahoma" target="_blank">Oklahoma</a>
+			<a id="oregon_page" href="https://en.wikipedia.org/wiki/oregon" target="_blank">Oregon</a>
+			<a id="pennsylvania_page" href="https://en.wikipedia.org/wiki/pennsylvania" target="_blank">Pennsylvania</a>
+			<a id="rhode_island_page" href="https://en.wikipedia.org/wiki/rhode_island" target="_blank">Rhode Island</a>
+			<a id="south_carolina_page" href="https://en.wikipedia.org/wiki/south_carolina" target="_blank">South Carolina</a>
+			<a id="south_dakota_page" href="https://en.wikipedia.org/wiki/south_dakota" target="_blank">South Dakota</a>
+			<a id="tennessee_page" href="https://en.wikipedia.org/wiki/tennessee" target="_blank">Tennessee</a>
+			<a id="texas_page" href="https://en.wikipedia.org/wiki/texas" target="_blank">Texas</a>
+			<a id="utah_page" href="https://en.wikipedia.org/wiki/utah" target="_blank">Utah</a>
+			<a id="vermont_page" href="https://en.wikipedia.org/wiki/vermont" target="_blank">Vermont</a>
+			<a id="virginia_page" href="https://en.wikipedia.org/wiki/virginia" target="_blank">Virginia</a>
+			<a id="washington_page" href="https://en.wikipedia.org/wiki/washington" target="_blank">Washington</a>
+			<a id="west_virginia_page" href="https://en.wikipedia.org/wiki/west_virginia" target="_blank">West Virginia</a>
+			<a id="wisconsin_page" href="https://en.wikipedia.org/wiki/wisconsin" target="_blank">Wisconsin</a>
+			<a id="wyoming_page" href="https://en.wikipedia.org/wiki/wyoming" target="_blank">Wyoming</a>
+		</div>
+	</div>
+	<div id="map">
+		<img src="img/blank_map.png" />
+		<!-- states_normal -->
+		<img id="alabama" src="img/states/alabama.png" />
+		<img id="alaska" src="img/states/alaska.png" />
+		<img id="arizona" src="img/states/arizona.png" />
+		<img id="arkansas" src="img/states/arkansas.png" />
+		<img id="california" src="img/states/california.png" />
+		<img id="colorado" src="img/states/colorado.png" />
+		<img id="connecticut" src="img/states/connecticut.png" />
+		<img id="delaware" src="img/states/delaware.png" />
+		<img id="florida" src="img/states/florida.png" />
+		<img id="georgia" src="img/states/georgia.png" />
+		<img id="hawaii" src="img/states/hawaii.png" />
+		<img id="idaho" src="img/states/idaho.png" />
+		<img id="illinois" src="img/states/illinois.png" />
+		<img id="indiana" src="img/states/indiana.png" />
+		<img id="iowa" src="img/states/iowa.png" />
+		<img id="kansas" src="img/states/kansas.png" />
+		<img id="kentucky" src="img/states/kentucky.png" />
+		<img id="louisiana" src="img/states/louisiana.png" />
+		<img id="maine" src="img/states/maine.png" />
+		<img id="maryland" src="img/states/maryland.png" />
+		<img id="massachusetts" src="img/states/massachusetts.png" />
+		<img id="michigan" src="img/states/michigan.png" />
+		<img id="minnesota" src="img/states/minnesota.png" />
+		<img id="mississippi" src="img/states/mississippi.png" />
+		<img id="missouri" src="img/states/missouri.png" />
+		<img id="montana" src="img/states/montana.png" />
+		<img id="nebraska" src="img/states/nebraska.png" />
+		<img id="nevada" src="img/states/nevada.png" />
+		<img id="new_hampshire" src="img/states/new_hampshire.png" />
+		<img id="new_jersey" src="img/states/new_jersey.png" />
+		<img id="new_mexico" src="img/states/new_mexico.png" />
+		<img id="new_york" src="img/states/new_york.png" />
+		<img id="north_carolina" src="img/states/north_carolina.png" />
+		<img id="north_dakota" src="img/states/north_dakota.png" />
+		<img id="ohio" src="img/states/ohio.png" />
+		<img id="oklahoma" src="img/states/oklahoma.png" />
+		<img id="oregon" src="img/states/oregon.png" />
+		<img id="pennsylvania" src="img/states/pennsylvania.png" />
+		<img id="rhode_island" src="img/states/rhode_island.png" />
+		<img id="south_carolina" src="img/states/south_carolina.png" />
+		<img id="south_dakota" src="img/states/south_dakota.png" />
+		<img id="tennessee" src="img/states/tennessee.png" />
+		<img id="texas" src="img/states/texas.png" />
+		<img id="utah" src="img/states/utah.png" />
+		<img id="vermont" src="img/states/vermont.png" />
+		<img id="virginia" src="img/states/virginia.png" />
+		<img id="washington" src="img/states/washington.png" />
+		<img id="west_virginia" src="img/states/west_virginia.png" />
+		<img id="wisconsin" src="img/states/wisconsin.png" />
+		<img id="wyoming" src="img/states/wyoming.png" />
+
+		<!-- states_highlight -->
+		<img id="alabama_highlight" class="state_highlight" src="img/states_highlight/alabama.png" />
+		<img id="alaska_highlight" class="state_highlight" src="img/states_highlight/alaska.png" />
+		<img id="arizona_highlight" class="state_highlight" src="img/states_highlight/arizona.png" />
+		<img id="arkansas_highlight" class="state_highlight" src="img/states_highlight/arkansas.png" />
+		<img id="california_highlight" class="state_highlight" src="img/states_highlight/california.png" />
+		<img id="colorado_highlight" class="state_highlight" src="img/states_highlight/colorado.png" />
+		<img id="connecticut_highlight" class="state_highlight" src="img/states_highlight/connecticut.png" />
+		<img id="delaware_highlight" class="state_highlight" src="img/states_highlight/delaware.png" />
+		<img id="florida_highlight" class="state_highlight" src="img/states_highlight/florida.png" />
+		<img id="georgia_highlight" class="state_highlight" src="img/states_highlight/georgia.png" />
+		<img id="hawaii_highlight" class="state_highlight" src="img/states_highlight/hawaii.png" />
+		<img id="idaho_highlight" class="state_highlight" src="img/states_highlight/idaho.png" />
+		<img id="illinois_highlight" class="state_highlight" src="img/states_highlight/illinois.png" />
+		<img id="indiana_highlight" class="state_highlight" src="img/states_highlight/indiana.png" />
+		<img id="iowa_highlight" class="state_highlight" src="img/states_highlight/iowa.png" />
+		<img id="kansas_highlight" class="state_highlight" src="img/states_highlight/kansas.png" />
+		<img id="kentucky_highlight" class="state_highlight" src="img/states_highlight/kentucky.png" />
+		<img id="louisiana_highlight" class="state_highlight" src="img/states_highlight/louisiana.png" />
+		<img id="maine_highlight" class="state_highlight" src="img/states_highlight/maine.png" />
+		<img id="maryland_highlight" class="state_highlight" src="img/states_highlight/maryland.png" />
+		<img id="massachusetts_highlight" class="state_highlight" src="img/states_highlight/massachusetts.png" />
+		<img id="michigan_highlight" class="state_highlight" src="img/states_highlight/michigan.png" />
+		<img id="minnesota_highlight" class="state_highlight" src="img/states_highlight/minnesota.png" />
+		<img id="mississippi_highlight" class="state_highlight" src="img/states_highlight/mississippi.png" />
+		<img id="missouri_highlight" class="state_highlight" src="img/states_highlight/missouri.png" />
+		<img id="montana_highlight" class="state_highlight" src="img/states_highlight/montana.png" />
+		<img id="nebraska_highlight" class="state_highlight" src="img/states_highlight/nebraska.png" />
+		<img id="nevada_highlight" class="state_highlight" src="img/states_highlight/nevada.png" />
+		<img id="new_hampshire_highlight" class="state_highlight" src="img/states_highlight/new_hampshire.png" />
+		<img id="new_jersey_highlight" class="state_highlight" src="img/states_highlight/new_jersey.png" />
+		<img id="new_mexico_highlight" class="state_highlight" src="img/states_highlight/new_mexico.png" />
+		<img id="new_york_highlight" class="state_highlight" src="img/states_highlight/new_york.png" />
+		<img id="north_carolina_highlight" class="state_highlight" src="img/states_highlight/north_carolina.png" />
+		<img id="north_dakota_highlight" class="state_highlight" src="img/states_highlight/north_dakota.png" />
+		<img id="ohio_highlight" class="state_highlight" src="img/states_highlight/ohio.png" />
+		<img id="oklahoma_highlight" class="state_highlight" src="img/states_highlight/oklahoma.png" />
+		<img id="oregon_highlight" class="state_highlight" src="img/states_highlight/oregon.png" />
+		<img id="pennsylvania_highlight" class="state_highlight" src="img/states_highlight/pennsylvania.png" />
+		<img id="rhode_island_highlight" class="state_highlight" src="img/states_highlight/rhode_island.png" />
+		<img id="south_carolina_highlight" class="state_highlight" src="img/states_highlight/south_carolina.png" />
+		<img id="south_dakota_highlight" class="state_highlight" src="img/states_highlight/south_dakota.png" />
+		<img id="tennessee_highlight" class="state_highlight" src="img/states_highlight/tennessee.png" />
+		<img id="texas_highlight" class="state_highlight" src="img/states_highlight/texas.png" />
+		<img id="utah_highlight" class="state_highlight" src="img/states_highlight/utah.png" />
+		<img id="vermont_highlight" class="state_highlight" src="img/states_highlight/vermont.png" />
+		<img id="virginia_highlight" class="state_highlight" src="img/states_highlight/virginia.png" />
+		<img id="washington_highlight" class="state_highlight" src="img/states_highlight/washington.png" />
+		<img id="west_virginia_highlight" class="state_highlight" src="img/states_highlight/west_virginia.png" />
+		<img id="wisconsin_highlight" class="state_highlight" src="img/states_highlight/wisconsin.png" />
+		<img id="wyoming_highlight" class="state_highlight" src="img/states_highlight/wyoming.png" />
+	</div>
+	<script src="js/search.js"></script>
+</body>
+
+</html>
