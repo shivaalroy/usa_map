@@ -4,11 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Map of USA</title>
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,600">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="sprites/sprites.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/fastLiveSearch.js"></script>
 </head>
 
@@ -125,61 +125,62 @@
 		</div>
 	</div>
 	<div id="map">
-		<img src="img/blank_map.png" />
+		<!-- <img id="alabama" src="img/states/alabama.png" /> -->
 		<!-- states_normal -->
-		<img id="alabama" src="img/states/alabama.png" />
-		<img id="alaska" src="img/states/alaska.png" />
-		<img id="arizona" src="img/states/arizona.png" />
-		<img id="arkansas" src="img/states/arkansas.png" />
-		<img id="california" src="img/states/california.png" />
-		<img id="colorado" src="img/states/colorado.png" />
-		<img id="connecticut" src="img/states/connecticut.png" />
-		<img id="delaware" src="img/states/delaware.png" />
-		<img id="florida" src="img/states/florida.png" />
-		<img id="georgia" src="img/states/georgia.png" />
-		<img id="hawaii" src="img/states/hawaii.png" />
-		<img id="idaho" src="img/states/idaho.png" />
-		<img id="illinois" src="img/states/illinois.png" />
-		<img id="indiana" src="img/states/indiana.png" />
-		<img id="iowa" src="img/states/iowa.png" />
-		<img id="kansas" src="img/states/kansas.png" />
-		<img id="kentucky" src="img/states/kentucky.png" />
-		<img id="louisiana" src="img/states/louisiana.png" />
-		<img id="maine" src="img/states/maine.png" />
-		<img id="maryland" src="img/states/maryland.png" />
-		<img id="massachusetts" src="img/states/massachusetts.png" />
-		<img id="michigan" src="img/states/michigan.png" />
-		<img id="minnesota" src="img/states/minnesota.png" />
-		<img id="mississippi" src="img/states/mississippi.png" />
-		<img id="missouri" src="img/states/missouri.png" />
-		<img id="montana" src="img/states/montana.png" />
-		<img id="nebraska" src="img/states/nebraska.png" />
-		<img id="nevada" src="img/states/nevada.png" />
-		<img id="new_hampshire" src="img/states/new_hampshire.png" />
-		<img id="new_jersey" src="img/states/new_jersey.png" />
-		<img id="new_mexico" src="img/states/new_mexico.png" />
-		<img id="new_york" src="img/states/new_york.png" />
-		<img id="north_carolina" src="img/states/north_carolina.png" />
-		<img id="north_dakota" src="img/states/north_dakota.png" />
-		<img id="ohio" src="img/states/ohio.png" />
-		<img id="oklahoma" src="img/states/oklahoma.png" />
-		<img id="oregon" src="img/states/oregon.png" />
-		<img id="pennsylvania" src="img/states/pennsylvania.png" />
-		<img id="rhode_island" src="img/states/rhode_island.png" />
-		<img id="south_carolina" src="img/states/south_carolina.png" />
-		<img id="south_dakota" src="img/states/south_dakota.png" />
-		<img id="tennessee" src="img/states/tennessee.png" />
-		<img id="texas" src="img/states/texas.png" />
-		<img id="utah" src="img/states/utah.png" />
-		<img id="vermont" src="img/states/vermont.png" />
-		<img id="virginia" src="img/states/virginia.png" />
-		<img id="washington" src="img/states/washington.png" />
-		<img id="west_virginia" src="img/states/west_virginia.png" />
-		<img id="wisconsin" src="img/states/wisconsin.png" />
-		<img id="wyoming" src="img/states/wyoming.png" />
+		<div class="icon icon-blank"></div>
+		<div id="alabama" class="icon icon-alabama"></div>
+		<div id="alaska" class="icon icon-alaska"></div>
+		<div id="arizona" class="icon icon-arizona"></div>
+		<div id="arkansas" class="icon icon-arkansas"></div>
+		<div id="california" class="icon icon-california"></div>
+		<div id="colorado" class="icon icon-colorado"></div>
+		<div id="connecticut" class="icon icon-connecticut"></div>
+		<div id="delaware" class="icon icon-delaware"></div>
+		<div id="florida" class="icon icon-florida"></div>
+		<div id="georgia" class="icon icon-georgia"></div>
+		<div id="hawaii" class="icon icon-hawaii"></div>
+		<div id="idaho" class="icon icon-idaho"></div>
+		<div id="illinois" class="icon icon-illinois"></div>
+		<div id="indiana" class="icon icon-indiana"></div>
+		<div id="iowa" class="icon icon-iowa"></div>
+		<div id="kansas" class="icon icon-kansas"></div>
+		<div id="kentucky" class="icon icon-kentucky"></div>
+		<div id="louisiana" class="icon icon-louisiana"></div>
+		<div id="maine" class="icon icon-maine"></div>
+		<div id="maryland" class="icon icon-maryland"></div>
+		<div id="massachusetts" class="icon icon-massachusetts"></div>
+		<div id="michigan" class="icon icon-michigan"></div>
+		<div id="minnesota" class="icon icon-minnesota"></div>
+		<div id="mississippi" class="icon icon-mississippi"></div>
+		<div id="missouri" class="icon icon-missouri"></div>
+		<div id="montana" class="icon icon-montana"></div>
+		<div id="nebraska" class="icon icon-nebraska"></div>
+		<div id="nevada" class="icon icon-nevada"></div>
+		<div id="new_hampshire" class="icon icon-new_hampshire"></div>
+		<div id="new_jersey" class="icon icon-new_jersey"></div>
+		<div id="new_mexico" class="icon icon-new_mexico"></div>
+		<div id="new_york" class="icon icon-new_york"></div>
+		<div id="north_carolina" class="icon icon-north_carolina"></div>
+		<div id="north_dakota" class="icon icon-north_dakota"></div>
+		<div id="ohio" class="icon icon-ohio"></div>
+		<div id="oklahoma" class="icon icon-oklahoma"></div>
+		<div id="oregon" class="icon icon-oregon"></div>
+		<div id="pennsylvania" class="icon icon-pennsylvania"></div>
+		<div id="rhode_island" class="icon icon-rhode_island"></div>
+		<div id="south_carolina" class="icon icon-south_carolina"></div>
+		<div id="south_dakota" class="icon icon-south_dakota"></div>
+		<div id="tennessee" class="icon icon-tennessee"></div>
+		<div id="texas" class="icon icon-texas"></div>
+		<div id="utah" class="icon icon-utah"></div>
+		<div id="vermont" class="icon icon-vermont"></div>
+		<div id="virginia" class="icon icon-virginia"></div>
+		<div id="washington" class="icon icon-washington"></div>
+		<div id="west_virginia" class="icon icon-west_virginia"></div>
+		<div id="wisconsin" class="icon icon-wisconsin"></div>
+		<div id="wyoming" class="icon icon-wyoming" ></div>
 
 		<!-- states_highlight -->
-		<img id="alabama_highlight" class="state_highlight" src="img/states_highlight/alabama.png" />
+<!-- 		<img id="alabama_highlight" class="state_highlight" src="img/states_highlight/alabama.png" />
 		<img id="alaska_highlight" class="state_highlight" src="img/states_highlight/alaska.png" />
 		<img id="arizona_highlight" class="state_highlight" src="img/states_highlight/arizona.png" />
 		<img id="arkansas_highlight" class="state_highlight" src="img/states_highlight/arkansas.png" />
@@ -228,7 +229,7 @@
 		<img id="washington_highlight" class="state_highlight" src="img/states_highlight/washington.png" />
 		<img id="west_virginia_highlight" class="state_highlight" src="img/states_highlight/west_virginia.png" />
 		<img id="wisconsin_highlight" class="state_highlight" src="img/states_highlight/wisconsin.png" />
-		<img id="wyoming_highlight" class="state_highlight" src="img/states_highlight/wyoming.png" />
+		<img id="wyoming_highlight" class="state_highlight" src="img/states_highlight/wyoming.png" /> -->
 	</div>
 	<script src="js/search.js"></script>
 </body>
